@@ -10,5 +10,10 @@ class FizzBuzzTest {
 	void testFor1() {
 		assertEquals("1", FizzBuzzImpl.getResult(1), "This Should return 1");
 	}
+	
+	@Test
+	void testFor2() {
+		assertEquals("2", FizzBuzzImpl.getResult(2), "This Should return 2");
+	}
 
 }
