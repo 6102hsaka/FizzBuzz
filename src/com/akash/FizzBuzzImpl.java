@@ -6,7 +6,7 @@ public class FizzBuzzImpl {
 		if (x % 3 == 0) {
 			return "Fizz";
 		}
-		if (x == 5) {
+		if (x % 5 == 0) {
 			return "Buzz";
 		}
 		return Integer.toString(x);
