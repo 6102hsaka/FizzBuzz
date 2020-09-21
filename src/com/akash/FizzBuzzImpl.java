@@ -7,7 +7,7 @@ public class FizzBuzzImpl {
 			return "FizzBuzz";
 		}
 
-		if (x % 3 == 0) {
+		if (x % 3 == 0 || Integer.toString(x).contains("3")) {
 			return "Fizz";
 		}
 		if (x % 5 == 0) {
