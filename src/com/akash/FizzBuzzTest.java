@@ -56,6 +56,7 @@ class FizzBuzzTest {
 				() -> assertEquals("FizzBuzz", FizzBuzzImpl.getResult(90), "This Should return FizzBuzz"));
 	}
 	
+	@Test
 	void testForNeitherMultipleOf3Nor5() {
 		assertAll("Test for coprime of 3 and 5", 
 				() -> assertEquals("11", FizzBuzzImpl.getResult(11), "This Should return 11"),
@@ -63,6 +64,15 @@ class FizzBuzzTest {
 				() -> assertEquals("44", FizzBuzzImpl.getResult(44), "This Should return 44"),
 				() -> assertEquals("88", FizzBuzzImpl.getResult(88), "This Should return 88"),
 				() -> assertEquals("98", FizzBuzzImpl.getResult(98), "This Should return 98"));
+	}
+	
+	@Test
+	void testForPresenceOf3() {
+		assertAll("Test for presence of 3 in number",
+				()->assertEquals("Fizz", FizzBuzzImpl.getResult(13)),
+				()->assertEquals("Fizz", FizzBuzzImpl.getResult(43)),
+				()->assertEquals("Fizz", FizzBuzzImpl.getResult(73)),
+				()->assertEquals("Fizz", FizzBuzzImpl.getResult(83)));
 	}
 	
 }
