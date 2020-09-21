@@ -46,4 +46,14 @@ class FizzBuzzTest {
 				() -> assertEquals("Buzz", FizzBuzzImpl.getResult(100), "This Should return Buzz"));
 	}
 	
+	@Test
+	void testForMultipleOf3And5() {
+		assertAll("Test for Multiple of 3 and 5", 
+				() -> assertEquals("FizzBuzz", FizzBuzzImpl.getResult(15), "This Should return FizzBuzz"),
+				() -> assertEquals("FizzBuzz", FizzBuzzImpl.getResult(30), "This Should return FizzBuzz"),
+				() -> assertEquals("FizzBuzz", FizzBuzzImpl.getResult(45), "This Should return FizzBuzz"),
+				() -> assertEquals("FizzBuzz", FizzBuzzImpl.getResult(60), "This Should return FizzBuzz"),
+				() -> assertEquals("FizzBuzz", FizzBuzzImpl.getResult(90), "This Should return FizzBuzz"));
+	}
+	
 }
