@@ -10,7 +10,7 @@ public class FizzBuzzImpl {
 		if (x % 3 == 0 || Integer.toString(x).contains("3")) {
 			return "Fizz";
 		}
-		if (x % 5 == 0) {
+		if (x % 5 == 0 || Integer.toString(x).contains("5")) {
 			return "Buzz";
 		}
 		return Integer.toString(x);
